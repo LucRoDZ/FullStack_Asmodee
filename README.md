@@ -54,6 +54,8 @@ This project is a simple fullstack application that allows customers to place or
    ```txt
    fastapi
    uvicorn
+   pytest
+   httpx
    ```
 
 4. Start the server:
