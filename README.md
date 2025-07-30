@@ -62,6 +62,7 @@ This project is a simple fullstack application that allows customers to place or
    ```
 
    The backend will be available at [http://localhost:8000](http://localhost:8000)
+   With the Swagger Docs and Simple use at [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
