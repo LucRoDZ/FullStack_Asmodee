@@ -1,11 +1,10 @@
 from fastapi import APIRouter, Query
-from typing import List, Optional
 from database import products
-from models import Product
+from typing import List, Optional
 
 router = APIRouter(prefix="/products", tags=["Products"])
 
-@router.get("/", response_model=List[Product])
+@router.get("/", response_model=List[dict])
 def get_products(category: Optional[str] = Query(None)):
     if category:
         return [p for p in products if p["category"] == category]

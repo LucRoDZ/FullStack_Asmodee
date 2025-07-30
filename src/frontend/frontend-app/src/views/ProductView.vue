@@ -31,7 +31,6 @@ const fetchProducts = async () => {
   try {
     const res = await getProducts(category.value)
     products.value = res.data
-    console.log('Produits reçus:', res.data)
   } catch (err) {
     console.error('Erreur lors de la récupération des produits', err)
   }
