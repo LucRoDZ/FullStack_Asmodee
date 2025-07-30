@@ -11,6 +11,8 @@ This project is a simple fullstack application that allows customers to place or
   - Order placement
   - Order history
 
+- ChatGPT have been used as a copilot to learn .vue file structure.
+
 ---
 
 ## 📦 Prerequisites
