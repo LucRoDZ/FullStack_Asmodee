@@ -93,6 +93,9 @@ This project is a simple fullstack application that allows customers to place or
 | POST   | `/order`     | Creates an order: validates product existence and customer name            |
 | GET    | `/orders`    | Lists all saved orders (persisted in a JSON file)                          |
 
+- GET products available at [http://localhost:5173/products](http://localhost:5173/products)
+- POST order available at [http://localhost:5173/order](http://localhost:5173/order)
+- GET orders available at [http://localhost:5173/orders](http://localhost:5173/orders)
 ### Example Payload for POST `/order`
 
 ```json
@@ -104,9 +107,19 @@ This project is a simple fullstack application that allows customers to place or
 
 ---
 
+## Run tests
+
+- Navigate to src/backend :
+   ```bash
+   PYTHONPATH=. pytest tests/
+   ```
+
+---
+
 ## Implemented Bonus
 
 - ✅ Order persistence in `orders.json`
+- ✅ Add few Unit Tests with Pytest
 - ✅ Error handling on the backend (invalid IDs, empty name, etc.)
 - ✅ View routing with Vue Router (`/products`, `/orders`)
 - ✅ Formatted price display (e.g., `$1,499.98`)
